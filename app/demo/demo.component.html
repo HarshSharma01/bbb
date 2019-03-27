@@ -1,0 +1,71 @@
+<!--<html>
+  <head>
+    <title>basic</title>
+  </head>
+  <body>
+      <p>First name:</p>
+      <p>{{display()}}</p>
+      <button (click)="onClickMe()" value={{onClickMe()}}>Click me!</button>
+      
+      <input type="text" [(ngModel)]='someName'>
+      <p>My name is: {{someName}}</p>
+      
+      <div *ngIf="appear">
+        <button>Click</button>
+      </div>
+
+      <ul *ngFor="let custinfo of CustomerList"> 
+        <li>{{custinfo.name| uppercase}}--{{custinfo.type | uppercase}}--{{custinfo.date | date}}</li>
+      </ul> 
+  </body>
+</html>-->
+
+<!--<html>
+  <body>
+<ul *ngFor="let CustomerInfo of CustomerList">
+  <li>
+    {{CustomerInfo.name}}------{{CustomerInfo.type}}
+  </li>
+</ul>
+<app-demodirectives
+  [total]="getTotalEmployee()"
+  [male]="getMaleEmployee()"
+  [female]="getFemaleEmployee()">
+</app-demodirectives>
+<table>
+  <thead>
+    <tr>
+      <th>EmployeeName</th>
+      <th>Gender</th>
+      <th>Department</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let EmployeeDetails of EmployeeTable">
+        <td>{{EmployeeDetails.EmployeeName | uppercase | customPipe:EmployeeDetails.Gender}}</td>
+        <td>{{EmployeeDetails.Gender}}</td>
+        <td>{{EmployeeDetails.Department}}</td>
+        <td>{{EmployeeDetails.Date | date}}</td>
+      </tr>
+  </tbody>
+</table>
+</body>
+</html>-->
+
+<!--<html>
+  <body>
+      <p>Hello</p>
+      <table>
+          <tr *ngFor="let EmployeeDetails of Info">
+              <td>{{EmployeeDetails.EmployeeName | uppercase | customPipe:EmployeeDetails.Gender}}</td>
+              <td>{{EmployeeDetails.Gender}}</td>
+              <td>{{EmployeeDetails.Department}}</td>
+              <td>{{EmployeeDetails.Date | date}}</td>
+            </tr>
+      </table>
+  </body>
+</html>-->
+
+<button (click)="onClickMe()">Click me!</button>
+<p>{{clickMessage}}</p>
